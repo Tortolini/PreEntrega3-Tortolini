@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(164deg, rgba(0,0,0,1) 60%, rgba(182,135,94,1) 87%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    height: 100%;
+}
+.ul__Index{
+    list-style: none;
+    text-decoration: none;
+}
+.li_Index{
+    text-decoration: none;
+    color: aliceblue;
+}
+.h1__index{
+    font-family: Comic Sans MS;
+    font-size: 30px;
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    
+}
+.header__main__div__h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+hr{
+    color:white;
+    size: 4px;
+}
+.bg-2{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.t-stroke-shadow {
+    color: black;
+    text-shadow: -3px 3px #a69b9b, -3px -3px #666363, 3px -3px #8b7b7b, 3px 3px #d4d4af, 6px 6px #0b0b0b;
+}
+
+
+
+/* MOBILE FIRST  */
+
+/* index */
+
+#body__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+.navIndex{
+display: grid;
+grid-template-columns: 1fr;
+justify-items: center;
+background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+background-clip: text;
+animation: color 3s linear infinite;
+background-size: 500%;    
+}
+
+
+.imagen__nav{
+width: 0px;
+height: 0px;
+}
+.header__div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.article__main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+.div__article{
+    width: 100%;
+    height: auto;
+}
+.imagen__main{
+    border-radius: 50%;
+}
+.imagen__main{
+    height: 100%;
+    width: 100%;
+}
+.div__article{
+    border-style: double;
+    border-color: aliceblue;
+}
+.p__div__index{
+    color: aliceblue;
+}
+.p__div2{
+    display: none;
+}
+footer{
+    display: grid;
+    grid-template-columns: 3fr auto auto;
+    justify-content: space-around;
+}
+.footer__div__img{
+    width: 30px;
+    height: 30px;
+}
+
+/* sobre nosotros */
+.sobreNosotros_main_section_article_div{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.sobreNosotros__p{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sobreNosotros_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+}
+
+/* DESKTOP */
+@media(min-width: 1028px){
+    .navIndex{
+        grid-template-columns: auto 3fr;
+        justify-content: space-around;
+        justify-items: flex-end;
+        align-items: flex-end;
+        background-color: black;
+        margin-top: 2px;
+    }
+    .ul__Index{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ul__Index li{
+        margin-left: 50px;
+        padding-left: 20px;
+    }
+    .imagen__nav{
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+}
+.h1__index{
+    
+    font-family: Comic Sans MS;
+    font-size: 50px;
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    }
+.imagen__main{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.imagen__main:hover{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+.article__main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.div__article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+}
+/* sobre nosotros desktop */
+.sobreNosotros_main_section_article_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sobreNosotros_img{
+    width: 600px;
+    height: 500px;
+    border-radius: 20%;
+}
+.agrandar:hover{
+    transform: scale(1.2);
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: all;
+}
+.bajar:hover{
+    transform: translateY(50px);
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: all;
+}
+.h2__sobreNosotros{
+    color: bisque;
+}
+.footer__div__img{
+    margin-left: 50px;
+    margin-right: 20px;
+}
+}
+
+
+
+
+
+/* animaciones */
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
