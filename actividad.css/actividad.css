@@ -8,6 +8,12 @@ body{
     width: 100%;
     height: 100%;
 }
+.navbar{
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+background-clip: text;
+animation: color 3s linear infinite;
+background-size: 500%;
+}
 .ul__Index{
     list-style: none;
     text-decoration: none;
@@ -21,14 +27,26 @@ body{
     font-size: 30px;
     letter-spacing: 5px;
     word-spacing: 9px;
-    color: #000000;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: italic;
-    font-variant: normal;
-    text-transform: none;
-    
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
 }
+
 .header__main__div__h4{
     display: flex;
     justify-content: center;
@@ -63,21 +81,6 @@ hr{
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
 }
-.navIndex{
-display: grid;
-grid-template-columns: 1fr;
-justify-items: center;
-background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
-background-clip: text;
-animation: color 3s linear infinite;
-background-size: 500%;    
-}
-
-
-.imagen__nav{
-width: 0px;
-height: 0px;
-}
 .header__div{
     display: flex;
     align-content: center;
@@ -105,6 +108,9 @@ height: 0px;
 }
 .p__div__index{
     color: aliceblue;
+}
+.p__div__index:hover{
+    font-size: x-large;
 }
 .p__div2{
     display: none;
@@ -137,27 +143,6 @@ footer{
 
 /* DESKTOP */
 @media(min-width: 1028px){
-    .navIndex{
-        grid-template-columns: auto 3fr;
-        justify-content: space-around;
-        justify-items: flex-end;
-        align-items: flex-end;
-        background-color: black;
-        margin-top: 2px;
-    }
-    .ul__Index{
-        display: flex;
-        justify-content: space-between;
-    }
-    .ul__Index li{
-        margin-left: 50px;
-        padding-left: 20px;
-    }
-    .imagen__nav{
-        width: 50px;
-        height: 50px;
-        margin: 2px;
-}
 .h1__index{
     
     font-family: Comic Sans MS;
@@ -237,6 +222,10 @@ footer{
     }
 }
 
-
+@keyframes textclip {
+    to {
+    background-position: 200% center;
+    }
+}
 
 

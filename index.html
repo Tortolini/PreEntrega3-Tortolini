@@ -15,20 +15,30 @@
 <body id="body__grid">
     <header>
     <!--  Nav__bar  -->
-        <nav class="navIndex" id="nav__index">
-            <div>
-                <img class="imagen__nav" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1pVNSrY5rBCZQwc7rs2kQKng7IS3tzDpBVAkjFNafCw&s" alt="logotipo de ottos">
-            </div>
-            <div>
-                <ul class="ul__Index">
-                    <li class="li_Index"><a href="#">Inicio</a></li>
-                    <li class="li_Index"><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
-                    <li class="li_Index"><a href="./ubicacion.html">Ubicacion</a></li>
-                    <li class="li_Index"><a href="./reserva.html">Reserva</a></li>
-                    <li class="li_Index"><a href="./nuestraCarta.html">Nuestra Carta</a></li>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/sobreNosotros.html">Sobre Nosotros</a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/ubicacion.html">Ubicacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/reserva.html">Reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/nuestraCarta.html">Nuestra Carta</a>
+                </li>
                 </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
     <hr>
     <main>
@@ -42,15 +52,17 @@
             </div>
     <!-- Section -->
             <section>
-                <article class="article__main">
-                    <div class="div__article">
-                        <p class="p__div__index">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil voluptatibus ipsum dolore aliquid adipisci non eligendi quo quis architecto asperiores deleniti sapiente eveniet magnam dicta blanditiis, voluptatem ullam odit?</p>
-                    </div>
-                    <div class="div__img">
-                        <img class="imagen__main" src="https://img.freepik.com/vector-gratis/comida-rapida-estilo-pop-art_24908-61699.jpg?w=740&t=st=1664246624~exp=1664247224~hmac=7bcb64667bf904f3d90f426f5cebd9880bbb22eeadbb23b7ef9da9e02b789dac" alt="comida rapida">
-                    </div>  
-                    <div class="div__article">
-                        <p class="p__div__index">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt, inventore delectus, voluptates labore odio, quasi beatae ullam accusamus aut doloribus quod natus assumenda officiis sequi accusantium. Voluptatem, quia ea.</p>
+                <article class="article__main container">
+                    <div class="row">
+                        <div class=" col-sm-12 col-lg-12 text-center">
+                            <p class="p__div__index ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil voluptatibus ipsum dolore aliquid adipisci non eligendi quo quis architecto asperiores deleniti sapiente eveniet magnam dicta blanditiis, voluptatem ullam odit?</p>
+                        </div>
+                        <div class=" col-sm-12 col-lg-6">
+                            <img class="imagen__main" src="https://img.freepik.com/vector-gratis/comida-rapida-estilo-pop-art_24908-61699.jpg?w=740&t=st=1664246624~exp=1664247224~hmac=7bcb64667bf904f3d90f426f5cebd9880bbb22eeadbb23b7ef9da9e02b789dac" alt="comida rapida">
+                        </div>  
+                        <div class=" col-sm-12 col-lg-6 text-center">
+                            <p class="p__div__index">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam voluptates voluptas eos ducimus minus dolores tenetur culpa, eveniet quidem quia consequuntur quaerat tempore expedita hic deleniti sapiente dolorum ex. Soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, vel quidem aut a voluptatum excepturi? Eum fuga officiis commodi perferendis. Similique aliquid dolor aperiam totam delectus illum quas in quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt, inventore delectus, voluptates labore odio, quasi beatae ullam accusamus aut doloribus quod natus assumenda officiis sequi accusantium. Voluptatem, quia ea.</p>
+                        </div>
                     </div>
                 </article>
             </section>
