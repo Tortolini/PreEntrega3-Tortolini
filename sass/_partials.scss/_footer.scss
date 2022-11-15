@@ -1,0 +1,16 @@
+footer{
+    display: grid;
+    grid-template-columns: 3fr auto auto;
+    justify-content: space-around;
+    div{
+        .footer__div__img{
+            width: 30px;
+            height: 30px;
+        }
+        
+    }
+    .img__footer{
+        display: flex;
+        justify-content: space-around ;
+    }
+}

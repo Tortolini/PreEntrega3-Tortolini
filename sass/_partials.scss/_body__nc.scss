@@ -1,0 +1,18 @@
+body{
+    main{
+        section{
+            article{
+                .div_productos{
+                    ol{
+                        @each $color in white, grey {
+                            .carta#{$color}{
+                                color: $color;
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+

@@ -1,0 +1,42 @@
+body{
+    .bg-2{
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+        .t-stroke-shadow {
+            color: black;
+            text-shadow: -3px 3px #a69b9b, -3px -3px #666363, 3px -3px #8b7b7b, 3px 3px #d4d4af, 6px 6px #0b0b0b;
+        }
+    }
+    .bg-2{
+            margin-bottom: 50px
+    }
+}
+
+/*Desktop*/ 
+
+@media (min-width: 1024px){
+    body{
+        main{
+            section{
+                article{
+                    div{
+                        div{
+                            .main__section__article__div__div__div1{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-right: 50px;
+                                color: white;
+                                :hover{
+                                    font-size: x-large;
+                                    transition-property: all;
+                                    transition-duration: 1.5s;
+                                    transition-delay: 0s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
